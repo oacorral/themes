@@ -10,6 +10,15 @@
   <section>
     <h1><?php the_title(); ?></h1>
     <?php the_content(); ?>
+    <form action="" method="post">
+      <label for="name">Nombre</label><br>
+      <input type="text" id="name" placeholder="Escribe aquí tu nombre y apellidos"><br>
+      <label for="subject">Asunto</label><br>
+      <input type="text" id="subject" placeholder="Motivo de tu consulta"><br>
+      <label for="message">Mensaje</label><br>
+      <textarea id="message"></textarea><br>
+      <button type="submit">Enviar datos</button>
+    </form>
   </section>
 <?php endif; ?>
 <!-- Archivo de barra lateral por defecto -->
