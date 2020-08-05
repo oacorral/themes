@@ -14,7 +14,7 @@ add_action('init', 'mis_menus');
 
 /**
 * Crear una zona de Widgets que podremos gestionar desde el administrador de
-* Wordpress  fdsdfas
+* Wordpress.
 */
 function mis_widgets()
 {
