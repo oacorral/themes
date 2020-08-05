@@ -11,8 +11,8 @@
         <?php the_category(); ?>
       </header>
       <?php the_excerpt(); ?>
-      <footer>        
-        <?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
+      <footer>
+        <?php the_tags('<ul><li>', '</li><li>', '</li></ul>'); ?>
         <address>Por <?php the_author_posts_link(); ?></address>
       </footer>
     </article>
