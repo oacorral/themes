@@ -1,0 +1,21 @@
+/*
+Theme Name: Simple
+Theme URI: https://oscaralonsocorral.com
+Author: Óscar Alonso Corral
+Author URI: https://oscaralonsocorral.com
+Description: Tema muy simple de Wordpress.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simple
+Este tema, al igual que Wordpress, está bajo la licencia GPL.
+Úsala para crear algo interesante, divertirete y compartir con otros lo que has aprendido.
+*/
+
+/* body{
+  background-color: #000000;
+} */
