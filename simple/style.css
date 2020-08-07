@@ -16,6 +16,42 @@ Este tema, al igual que Wordpress, está bajo la licencia GPL.
 Úsala para crear algo interesante, divertirete y compartir con otros lo que has aprendido.
 */
 
-/* body{
-  background-color: #000000;
-} */
+body{
+  font-family: Arial;
+  font-size: 15px;
+  color: #333;
+  background: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  line-height: 1.7em;
+}
+
+header{
+  background:  #393939;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+header h1{
+  color: #fff;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.container{
+width: 1020px;
+margin: 0 auto;
+overflow: auto;
+}
+
+.main{
+  margin: 15px 0;
+}
+
+footer{
+  background:  #393939;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
