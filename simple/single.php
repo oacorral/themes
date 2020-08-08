@@ -5,18 +5,16 @@
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <article class="post">
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <h3><?php the_title(); ?></h3>
             <?php if (has_post_thumbnail()) : ?>
               <div class="post-thumbnail">
                 <?php the_post_thumbnail(); ?>
               </div>
             <?php endif; ?>
             <div class="meta">
-              Escrito por <?php the_author(); ?> el <?php the_time('l j \d\e F \d\e Y \a \l\a\s H:i:s'); ?>
+              Escrito por <?php the_author(); ?> el <?php the_time('l j \d\e F \d\e Y \a \l\a\s H:i'); ?>
             </div>
-            <?php the_excerpt(); ?>
-            <br>
-            <a class="button" href="<?php the_permalink(); ?>">Leer más</a>
+            <?php the_content(); ?>
           </article>
         <?php endwhile; ?>
         <?php else :?>
