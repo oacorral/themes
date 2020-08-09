@@ -2,7 +2,7 @@
 function simple_theme_setup()
 {
     // Característica: Permitir imágenes
-    // add_theme_support('post-thumbnails');
+    add_theme_support('post-thumbnails');
 
     // Menús
     register_nav_menus(array(
