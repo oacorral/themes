@@ -13,26 +13,55 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: oacsimple
 Usa este tema para cuestiones educativas
 */
-
-body{
+body {
   background-color: #f4f4f4;
+  margin: 0;
 }
 
-header{
+a{
+  color: #333;
+}
+
+header {
   background-color: #393939;
   color: #fff;
 }
 
-.container{
+footer {
+  background-color: #393939;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
   width: 1020px;
   margin: 0 auto;
   overflow: auto;
 }
 
-.main{
+.main {
+  float: left;
   width: 68%;
 }
 
-.sidebar{
+.sidebar {
+  float: right;
   width: 28%;
+}
+
+article.post {
+  border-bottom: 1px solid #ccc;
+}
+
+article.post a.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.post-thumbnail img {
+  width: 100%;
 }
