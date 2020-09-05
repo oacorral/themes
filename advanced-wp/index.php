@@ -15,22 +15,21 @@
     <div class="container">
       <h1>
         <a href="index.html"><?php bloginfo('name'); ?></a>
-        <small>Another Wordpress Theme</small>
+        <small><?php bloginfo('description'); ?></small>
       </h1>
       <div class="h_right">
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" value="" placeholder="Search...">
+        <form class="" action="<?php esc_url(home_url('/')); ?>" method="get">
+          <input type="text" name="s" value="" placeholder="Search...">
         </form>
       </div>
     </div>
   </header>
   <nav class="nav main-nav">
     <div class="container">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Services</a></li>
-      </ul>
+      <?php
+        $args = array('theme_location' => 'primary');
+        wp_nav_menu($args);
+      ?>
     </div>
   </nav>
   <div class="container content">
@@ -100,6 +99,7 @@
       </div>
     </div>
   </footer>
+  <?php wp_footer(); ?>
 </body>
 
 </html>
