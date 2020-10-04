@@ -14,7 +14,7 @@
   <header>
     <div class="container">
       <h1>
-        <a href="index.html"><?php bloginfo('name'); ?></a>
+        <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
         <small><?php bloginfo('description'); ?></small>
       </h1>
       <div class="h_right">
@@ -37,10 +37,12 @@
     <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
         <article class="post">
-          <h2>Blog Post 1</h2>
-          <p class="meta">Posted at 11:00 on May 9 by admin</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non tincidunt ante, eget pulvinar mauris. Integer commodo enim ac tincidunt molestie. In finibus, velit ac ultricies imperdiet, nunc lorem rhoncus eros, nec imperdiet dui
-            ipsum sit amet lectus. </p>
+          <h2><?php the_title(); ?></h2>
+          <p class="meta">
+            Publicado el
+            <?php the_time('j \d\e F \d\e Y \a \l\a\s g:i a'); ?>
+            por admin</p>
+          <?php the_content(); ?>
           <a class="button" href="#">Read More</a>
         </article>
       <?php endwhile; ?>
