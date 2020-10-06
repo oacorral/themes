@@ -41,7 +41,7 @@
           <p class="meta">
             Publicado el
             <?php the_time('j \d\e F \d\e Y \a \l\a\s g:i a'); ?>
-            por admin</p>
+            por <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> </p>
           <?php the_content(); ?>
           <a class="button" href="#">Read More</a>
         </article>
@@ -77,5 +77,4 @@
   </footer>
   <?php wp_footer(); ?>
 </body>
-
 </html>
